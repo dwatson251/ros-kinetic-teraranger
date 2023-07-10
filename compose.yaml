@@ -10,3 +10,5 @@ services:
     restart: always
     volumes:
       - ./:/ros_ws
+    devices:
+      - /dev/vport0p1:/dev/vport0p1
