@@ -1,0 +1,11 @@
+version: '1.0'
+services:
+  ros:
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
+    build:
+      dockerfile: Dockerfile
+    container_name: ros-kinetic
+    restart: always
+    volumes:
+      - ./:/ros_ws
