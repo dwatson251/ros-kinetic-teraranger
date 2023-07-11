@@ -1,0 +1,13 @@
+diff --git a/scripts/evo_thermal.py b/scripts/evo_thermal.py
+index 57a5b95..bc8412f 100755
+--- a/scripts/evo_thermal.py
++++ b/scripts/evo_thermal.py
+@@ -175,7 +175,7 @@ class EvoThermal(object):
+         frame = cv2.resize(frame, (512, 512), interpolation=cv2.INTER_NEAREST)
+ 
+         # Apply selected colormap and stamp FPS
+-        frame = cv2.applyColorMap(frame, self.selected_cmap)
++        frame = cv2.applyColorMap(frame, cv2.COLORMAP_JET)
+ 
+         return frame
+ 
