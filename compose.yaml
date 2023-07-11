@@ -3,6 +3,7 @@ services:
   ros:
     stdin_open: true # docker run -i
     tty: true # docker run -t
+    privileged: true # docker run --privileged
     build:
       context: .
       dockerfile: Dockerfile
